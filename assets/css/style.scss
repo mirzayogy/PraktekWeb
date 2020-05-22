@@ -5,6 +5,27 @@
 $easeTime: 0.25s;
 $margin-top: 56px;
 
+html{
+    position: relative;
+    min-height: 100%;
+
+}
+
+body{
+    margin-bottom: 70px;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    font-size: 0.9em;
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
 $colors: (
     "mattBlackLight": "#303337",
     "mattBlackDark": "#212121",

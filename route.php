@@ -26,11 +26,16 @@ if(isset($_GET['page'])){
       break;
 
 
+    case 'login':
+      echo "<meta http-equiv='refresh' content='1; url=pages/auth/login.php'> ";
+    break;
+
+
     default:
     echo $nopage;
     break;
   }
 }else{
-  include "pages/main.php";
+  include "pages/home.php";
 }
 ?>

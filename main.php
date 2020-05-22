@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-  </main>
+
 
   <script src="plugins/jquery/jquery-3.5.1.min.js"></script>
   <script src="plugins/jquery/jquery.slimscroll.min.js"></script>
