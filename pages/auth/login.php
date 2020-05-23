@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <?php //include "../../partials/nav.php" 
-    ?>
     <div class="container-fluid bg">
         <?php
+        session_start();
+        session_destroy();
         if (isset($_POST["login"])) {
             $email = $_POST['email'];
             $password = md5($_POST['password']);
@@ -46,7 +46,11 @@
                         </div>
                     </div>
                 <?php
-                    echo "<meta http-equiv='refresh' content='2; url=/PraktekWeb/'> ";
+                    session_start();    
+                    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                    $_SESSION['PR_id'] = $row['id'];
+                    $_SESSION['PR_nama'] = $row['nama'];
+                    echo "<meta http-equiv='refresh' content='0; url=/PraktekWeb/'> ";
                 } else {
                 ?>
                     <div class="row">

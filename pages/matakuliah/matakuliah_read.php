@@ -114,14 +114,14 @@ if(isset($_POST['delete'])) {
                     <div class="row">
                       <form method="post" action="?page=matakuliah_update">
                         <input type="hidden" name="id_matakuliah" value="<?php echo $row["id_matakuliah"] ?>">
-                        <button class='btn btn-primary'  type="submit" name="go_to_update">
+                        <button class='btn btn-primary btn-sm'  type="submit" name="go_to_update">
                           <i class="fa fa-edit"></i>
                         </button>
                       </form>
                       <form method="post">
                         <input type="hidden" name="id_matakuliah" value="<?php echo $row["id_matakuliah"] ?>">
                         <input type="hidden" name="nama_matakuliah" value="<?php echo $row["nama_matakuliah"] ?>">
-                        <button class='btn btn-danger' onclick="return confirm('Anda Yakin menghapus Data <?php echo $row["nama_matakuliah"] ?>?')" type="submit" name="delete">
+                        <button class='btn btn-danger btn-sm' onclick="return confirm('Anda Yakin menghapus Data <?php echo $row["nama_matakuliah"] ?>?')" type="submit" name="delete">
                           <i class="fa fa-trash"></i>
                         </button>
                       </form>

@@ -14,32 +14,21 @@
 
     </ul>
 
-    <!-- Right Side Of Navbar -->
     <ul class="navbar-nav ml-auto">
-      <!-- Authentication Links -->
-      <!-- @guest -->
-      <li class="nav-item">
-        <a class="nav-link" href="{{ route('login') }}">Login</a>
-      </li>
-      <!-- @if (Route::has('register')) -->
-      <li class="nav-item">
-        <a class="nav-link" href="{{ route('register') }}">Register</a>
-      </li>
-      <!-- @endif
-      @else -->
+     <?php
+      session_start();
+      $nama = $_SESSION['PR_nama'];
+      // session_destroy();
+     ?>
       <li class="nav-item dropdown">
         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-          Username <span class="caret"></span>
+          <?php echo $nama ?> <span class="caret"></span>
         </a>
 
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{ route('logout') }}" id="navbarDropdown" data-toggle="modal" data-target="#logoutModal">
+          <a class="dropdown-item" href="#" id="navbarDropdown" data-toggle="modal" data-target="#logoutModal">
             Logout
           </a>
-
-          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-            <!-- @csrf -->
-          </form>
         </div>
       </li>
       <!-- @endguest -->
