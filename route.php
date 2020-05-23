@@ -25,6 +25,14 @@ if(isset($_GET['page'])){
       include "pages/matakuliah/matakuliah_update.php";
       break;
 
+    case 'pengingat':
+      include "pages/pengingat/pengingat_read.php";
+      break;
+
+    case 'pengingat_update':
+      include "pages/pengingat/pengingat_update.php";
+      break;
+
 
     case 'login':
       echo "<meta http-equiv='refresh' content='1; url=pages/auth/login.php'> ";

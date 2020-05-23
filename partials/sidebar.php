@@ -39,9 +39,9 @@ if (isset($_GET['page'])) {
             <a href="#" class="nav-link px-2"><i class="material-icons icon">computer</i>
                 <span class="text">Demo</span></a>
         </li> -->
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a href="#" class="nav-link sideMenuToggler px-2"><i class="material-icons icon">view_list</i>
                 <span class="text">Resize</span></a>
-        </li>
+        </li> -->
     </ul>
 </div>
